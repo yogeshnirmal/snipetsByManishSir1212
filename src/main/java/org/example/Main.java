@@ -7,9 +7,11 @@ public class Main {
 
         String s = "I am ^ IronnorI Ma, i";
         s = s.replaceAll("[^a-zA-Z]", "").toUpperCase(Locale.ROOT);
-        
+
         StringBuffer stringBuffer = new StringBuffer(s);
-        System.out.println("output  " + s.equals(String.valueOf(stringBuffer.reverse())));
+
+        if(s.equals(String.valueOf(stringBuffer.reverse()))) System.out.println("YES ");
+        else System.out.println("No");
 
     }
 }
